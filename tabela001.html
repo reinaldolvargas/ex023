@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabela</title>
+   <style>
+   body{
+            font-family: Arial, Helvetica, sans-serif;
+   }
+   table{
+      width: 400px; border-collapse: collapse; 
+   }
+   td{
+      border: 1px solid blue;text-align: center;
+   }
+   tr.linha1{
+      background-color: aquamarine;
+   }
+   td.linha2{
+      background-color: darkgrey;
+   }
+   td.dado1{
+      background-color: chartreuse;
+   }
+   td.dado2{
+      background-color: yellow;
+   }
+
+   </style>
+</head>
+<body>
+   <h1>Minha primeira tabela</h1>
+   <h2>hierarquia tabela simples</h2>
+   <p>
+      &lt;table> tabela <br>
+         
+         &lt;tr> table row, linha da tabela, cada &lt;tr> e uma linha
+         table header, cabeçalho da tabela <br>
+         &lttd> table data dados da tabela <br>
+         se a hierarquia não for obedecida a informação pode
+         aparecer antes ou depois da tabela <br>
+         obs:.para comentar algo dentro do codigo usamos &lt;----&gt;
+   </p>
+   <p>Na seção 'style' usamos 'table-width' para largura da tabela <br>
+   'border-collapse:' para determinar se as linhas da tabela ficarão <br>
+   juntas(colapse) ou se havera espaço entre elas</p>
+   <p>Em 'td' podemos usar 'border: 0px solid cor' para determinar <br>
+   espesura da borda, tipo de borda, cor da borda; 'text-align' para <br>
+   posicionar o texto; 'backgound-color' para cor de preenchimento, <br>
+   se usarmos uma 'class' para uma determinada 'td' alteramos so essa 'td' <br>
+   o mesmo serve para 'tr' e 'th'</p>
+   <table>
+      <tr class="linha1">
+         <td >a1</td>
+         <td>a2</td>
+         <td>a3</td>
+      </tr>
+      <tr>
+      <td>a2</td>
+      <td class="linha2">b2</td>
+      <td>c2</td>
+      </tr>
+      <tr>
+         <td>a3</td>
+         <td>b3</td>
+         <td class="dado1">c3</td>
+      </tr>
+      <tr>
+         <td>a4</td>
+         <td>b4</td>
+         <td class="dado2">c4</td>
+      </tr>
+   </table>
+</body>
+</html>
