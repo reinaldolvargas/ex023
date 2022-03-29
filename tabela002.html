@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela002</title>
     <style>
+    body{
+        background-color: khaki;
+    }
         tbody{
             font-family: arial, helvetica, sans-serif;
         }
@@ -23,6 +26,10 @@
         }
         td.num{
             text-align: right;
+        }caption{
+            background-color: cadetblue;padding: 10px;
+            border-radius: 10px 10px 0px 0px ;font-size: 1.3em;
+            font-weight: bolder;padding: 10px;
         }
 
     </style>
@@ -31,6 +38,7 @@
     <h1>criando tabelas grandes</h1>
     <h2>Composição da tabela</h2>
     <p>table <br>
+            >caption = legenda da tabela <br>
            >thhead = cabeçalio <br>
                 tr; td; th; <br>
             >tbody = corpo <br>
@@ -39,11 +47,17 @@
                 tr; td; th <br>
             >Para alinhar todos os campos de numero usamos uma 'class'com a identificação 'num'  e em "styli" colocamos 'td.num{text-align:}'permite determinar a forma do alinhamento, neste caso 'right' a direita.
             </p>
+            <p>'th' e um titulo que pode ser de uma linha ou coluna <br>
+            Ex:. 'estado' e titulo da coluna correspondente; 'total de habitantes ' e titulo da linha correspondentye <br>
+            para indicar no codigo a linha ou coluna correspondente ao 'th' <br>
+            usamos o 'scope' &lt;th scope=""&gt; pode ser col, colgroup (coluna), <br>
+             row, rowgroup (linha) </p>
     <table>
+    <caption>População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
-               <td>estado</td>
-               <td>população</td>
+               <th scope="col">estado</th>
+               <th scope="col" style="width: 100px;">população</th>
             </tr> 
             </thead>
             <tbody>
@@ -159,7 +173,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                     <td class="num"><strong>0000</strong></td>
 
             </tfoot>       
