@@ -15,10 +15,13 @@
         tbody > tr:nth-child(2n){
             background-color: aquamarine;
         }
-        
+        tbody > tr:nth-child(2n-1){
+            background-color: rgba(182, 248, 226, 0.726);
+        }
         table{
             width: 300px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -27,6 +30,10 @@
         thead, tfoot{
             background-color: darkgray;
             color: white;
+        }thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:darkgray ;
         }
         td.num{
             text-align: right;
@@ -66,7 +73,15 @@
              basta deixar um espaço entre o 'tr' eo ':nth-child' <br>
              ex:. tr :nth-cild(---) cria colunas zebradas<br>
               ----tr:nth-child(---) cria linhas zebradas</p>
-    <table>
+             <h2>cabeçario fixo</h2> 
+             <p>Para fixar o cabeçario e preciso que em 'style' na 'table' seja adicionado 'positio:relative'</p>
+             <p>ex:. 'table{position:relative;' e criar uma condição para 'thead'</p>
+             <p>ex:.'thead > tr > th{position:sticky; top:0px</p>
+             <p>'position:sticky' fixa o cabeçario</p>
+             <p>'top:0px' o mantem no topo colado a nargem superior, as vezes pode ser nescessario colocar um valor negativo:-1px.se o valor for positivo abre um espaço entre a nargem e o cabeçario</p>
+
+
+             <table>
     <caption>População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
