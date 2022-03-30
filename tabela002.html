@@ -12,8 +12,12 @@
         tbody{
             font-family: arial, helvetica, sans-serif;
         }
+        tbody > tr:nth-child(2n){
+            background-color: aquamarine;
+        }
+        
         table{
-            width: 500px;
+            width: 300px;
             border-collapse: collapse;
         }
         td, th{
@@ -31,6 +35,7 @@
             border-radius: 10px 10px 0px 0px ;font-size: 1.3em;
             font-weight: bolder;padding: 10px;
         }
+
 
     </style>
 </head>
@@ -52,6 +57,15 @@
             para indicar no codigo a linha ou coluna correspondente ao 'th' <br>
             usamos o 'scope' &lt;th scope=""&gt; pode ser col, colgroup (coluna), <br>
              row, rowgroup (linha) </p>
+             <h2>Efeito zebrado</h2>
+             <p>para criar um efeito zebrado usamos a pseudo classe <br>
+             ':nth-child(---)' que pode ter os seguintes valores: 2n linha não- sim <br>
+             2n-1 linha sin -não; odd linha impar; aven linha par</p>
+             <p>Ex:.tr:nth-child(2n){bacground-color:---;}</p>
+             <p>A pseudo classe':nth-child() tambem pode ser usado para colunas <br>
+             basta deixar um espaço entre o 'tr' eo ':nth-child' <br>
+             ex:. tr :nth-cild(---) cria colunas zebradas<br>
+              ----tr:nth-child(---) cria linhas zebradas</p>
     <table>
     <caption>População das unidades federativas do Brasil</caption>
         <thead>
