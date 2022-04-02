@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>responsividade</title>
+   <style>
+   body{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   table{ 
+      border-collapse: collapse;
+   }
+   caption{
+      font-size: 1.2em;font-weight: bolder;padding: 20px;
+   }
+   th, td{
+      border: 1.2px solid blue;padding: 10px;
+   }
+   th{
+      background-color: rgb(172, 240, 109);
+   }
+   tr:nth-child(even){
+      background-color: grey;
+   }
+   div#caixa{
+      overflow-x: auto;
+   }
+   </style>
+</head>
+<body>
+   <h1>Tabelas em telas pequenas</h1>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis amet ad totam debitis sed ipsa quae iste dignissimos quibusdam libero voluptatum nisi odit <br>
+    dolores, repellat optio quisquam commodi ab animi?</p>
+    <p>Para evitar a quebra do conteudo acima nas telas pequenas usamos um recurso <br>
+    > overflow:;, atua vertical e horizontalmente <br>
+    > overflow-x:; atua na horizontal <br>
+    > overflow-y:; atua na vertical <br>
+    podem ter o complemento 'auto'; 'hidden'; 'scroll'</p>
+    <p>Para isso e preciso colocar a tabela dentro de uma &lt;div&gt; com uma 'id="var" <br>
+    e declarar essa div em &lt;style&gt;</p>
+    <p>ex:. <br>
+    &lt;body&gt;<br>
+    ---&lt;div id="variavel"&gt;<br>
+    -----&lt;table&gt;<br>
+    --------------- <br>
+    --------------- <br>
+    -----&lt;/table&gt;<br>
+    ---&lt;/div&gt;</p>
+    <p>Declarando a 'div' em 'style' <br>
+    div#variavel{overflol:complemento;}</p>
+    <p>Essa configuração torna o conteudo fora da tabela ajustavel ao tamanho da tela <br>
+    e cria uma barra be rolagem para a tabela permitindo uma visualização mais limpa em telas pequenas.</p>
+    
+   <div id="caixa">
+      <table>
+         <caption>Tabelas responsivas</caption>
+      
+         <tr>
+            <th scope="col">produto</th>
+            <th scope="col">jan</th>
+            <th scope="col">fev</th>
+            <th scope="col">mar</th>
+            <th scope="col">abr</th>
+            <th scope="col">mai</th>
+            <th scope="col">jun</th>
+            <th scope="col">julh</th>
+            <th scope="col">ago</th>
+            <th scope="col">set</th>
+            <th scope="col">out</th>
+            <th scope="col">nov</th>
+            <th scope="col">des</th>
+         </tr>
+          <tr>
+         <td>caneta</td>
+         <td>3</td>
+         <td>5</td>
+         <td>4</td>
+         <td>6</td>
+         <td>8</td>
+         <td>7</td>
+         <td>9</td>
+         <td>4</td>
+         <td>12</td>
+         <td>3</td>
+         <td>6</td>
+         <td>8</td>
+         </tr>
+          <tr>
+         <td>lapis</td>
+         <td>6</td>
+         <td>7</td>
+         <td>9</td>
+         <td>8</td>
+         <td>4</td>
+         <td>6</td>
+         <td>6</td>
+         <td>8</td>
+         <td>9</td>
+         <td>4</td>
+         <td>6</td>
+         <td>3</td>
+         </tr>
+          <tr>
+         <td>regua</td>
+         <td>12</td>
+         <td>2</td>
+         <td>3</td>
+         <td>5</td>
+         <td>4</td>
+         <td>6</td>
+         <td>8</td>
+         <td>5</td>
+         <td>3</td>
+         <td>2</td>
+         <td>6</td>
+         <td>3</td>
+         </tr>
+        
+
+      
+      
+      </table>
+   </div>
+</body>
+</html>
