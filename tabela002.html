@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMAGEM/tabela2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Tabela002</title>
     <style>
     body{
-        background-color: khaki;
+        
     }
         tbody{
             font-family: arial, helvetica, sans-serif;
@@ -51,165 +53,170 @@
     </style>
 </head>
 <body>
-    <h1>criando tabelas compridas</h1>
-    <h2>Composição da tabela</h2>
-    <p>table <br>
-            >caption = legenda da tabela <br>
-           >thhead = cabeçalio <br>
-                tr; td; th; <br>
-            >tbody = corpo <br>
-                tr; td; th <br>
-            >tfoot = pe <br>
-                tr; td; th <br>
-            >Para alinhar todos os campos de numero usamos uma 'class'com a identificação 'num'  e em "styli" colocamos 'td.num{text-align:}'permite determinar a forma do alinhamento, neste caso 'right' a direita.12
-            </p>
-            <p>'th' e um titulo que pode ser de uma linha ou coluna <br>
-            Ex:. 'estado' e titulo da coluna correspondente; 'total de habitantes ' e titulo da linha correspondentye <br>
-            para indicar no codigo a linha ou coluna correspondente ao 'th' <br>
-            usamos o 'scope' &lt;th scope=""&gt; pode ser col, colgroup (coluna), <br>
-             row, rowgroup (linha) </p>
-             <h2>Efeito zebrado</h2>
-             <p>para criar um efeito zebrado usamos a pseudo classe <br>
-             ':nth-child(---)' que pode ter os seguintes valores: 2n linha não- sim <br>
-             2n-1 linha sin -não; odd linha impar; aven linha par</p>
-             <p>Ex:.tr:nth-child(2n){bacground-color:---;}</p>
-             <p>A pseudo classe':nth-child() tambem pode ser usado para colunas <br>
-             basta deixar um espaço entre o 'tr' eo ':nth-child' <br>
-             ex:. tr :nth-cild(---) cria colunas zebradas<br>
-              ----tr:nth-child(---) cria linhas zebradas</p>
-             <h2>cabeçario fixo</h2> 
-             <p>Para fixar o cabeçario e preciso que em 'style' na 'table' seja adicionado 'positio:relative'</p>
-             <p>ex:. 'table{position:relative;' e criar uma condição para 'thead'</p>
-             <p>ex:.'thead > tr > th{position:sticky; top:0px</p>
-             <p>'position:sticky' fixa o cabeçario</p>
-             <p>'top:0px' o mantem no topo colado a nargem superior, as vezes pode ser nescessario colocar um valor negativo:-1px.se o valor for positivo abre um espaço entre a nargem e o cabeçario</p>
-
-
-             <table>
-    <caption>População das unidades federativas do Brasil</caption>
-        <thead>
-            <tr>
-               <th scope="col">estado</th>
-               <th scope="col" style="width: 100px;">população</th>
-            </tr> 
-            </thead>
-            <tbody>
+    <main>
+        <header>
+            <h1>criando tabelas compridas</h1>
+            <nav>
+            <p><a href="tabela001.html">pg 1</a> <a href="index.html">indice</a>
+            <a href="tabela003.html">pg 3</a></p>
+            </nav>
+        </header>
+        <h2>Composição da tabela</h2>
+        <p>table <br>
+                >caption = legenda da tabela <br>
+               >thhead = cabeçalio <br>
+                    tr; td; th; <br>
+                >tbody = corpo <br>
+                    tr; td; th <br>
+                >tfoot = pe <br>
+                    tr; td; th <br>
+                >Para alinhar todos os campos de numero usamos uma 'class'com a identificação 'num'  e em "styli" colocamos 'td.num{text-align:}'permite determinar a forma do alinhamento, neste caso 'right' a direita.12
+                </p>
+                <p>'th' e um titulo que pode ser de uma linha ou coluna <br>
+                Ex:. 'estado' e titulo da coluna correspondente; 'total de habitantes ' e titulo da linha correspondentye <br>
+                para indicar no codigo a linha ou coluna correspondente ao 'th' <br>
+                usamos o 'scope' &lt;th scope=""&gt; pode ser col, colgroup (coluna), <br>
+                 row, rowgroup (linha) </p>
+                 <h2>Efeito zebrado</h2>
+                 <p>para criar um efeito zebrado usamos a pseudo classe <br>
+                 ':nth-child(---)' que pode ter os seguintes valores: 2n linha não- sim <br>
+                 2n-1 linha sin -não; odd linha impar; aven linha par</p>
+                 <p>Ex:.tr:nth-child(2n){bacground-color:---;}</p>
+                 <p>A pseudo classe':nth-child() tambem pode ser usado para colunas <br>
+                 basta deixar um espaço entre o 'tr' eo ':nth-child' <br>
+                 ex:. tr :nth-cild(---) cria colunas zebradas<br>
+                  ----tr:nth-child(---) cria linhas zebradas</p>
+                 <h2>cabeçario fixo</h2>
+                 <p>Para fixar o cabeçario e preciso que em 'style' na 'table' seja adicionado 'positio:relative'</p>
+                 <p>ex:. 'table{position:relative;' e criar uma condição para 'thead'</p>
+                 <p>ex:.'thead > tr > th{position:sticky; top:0px</p>
+                 <p>'position:sticky' fixa o cabeçario</p>
+                 <p>'top:0px' o mantem no topo colado a nargem superior, as vezes pode ser nescessario colocar um valor negativo:-1px.se o valor for positivo abre um espaço entre a nargem e o cabeçario</p>
+                 <table>
+        <caption>População das unidades federativas do Brasil</caption>
+            <thead>
                 <tr>
-                <td>São paulo</td>
-                <td class="num">45919049</td>
+                   <th scope="col">estado</th>
+                   <th scope="col" style="width: 100px;">população</th>
                 </tr>
-                <tr>
-                <td>minas gerais</td>
-                <td class="num">21168791</td>
-                </tr>
-                <tr>
-                    <td>Rio de Janeiro</td>
-                    <td class="num">17 463 349</td>
-                </tr>
-                <tr>
-                    <td>Bahia</td>
-                    <td class="num">14 985 284</td>
-                </tr>
-                <tr>
-                    <td>Paraná</td>
-                    <td class="num">11 597 484</td>
-                </tr>
-                <tr>
-                    <td>Rio Grande do Sul</td>
-                    <td class="num">11 466 630</td>
-                </tr>
-                <tr>
-                    <td>Pernambuco</td>
-                    <td class="num">9 674 793</td>
-                </tr>
-                <tr>
-                    <td>Ceará</td>
-                    <td class="num">9 240 580</td>
-                </tr>
-                <tr>
-                    <td>Pará</td>
-                    <td class="num">8 777 124</td>
-                </tr>
-                <tr>
-                    <td>Santa Catarina</td>
-                    <td class="num">7 338 473</td>
-                </tr>
-                <tr>
-                    <td>Goiás</td>
-                    <td class="num">7 206 589</td>
-                </tr>
-                <tr>
-                    <td>Maranhã</td>
-                    <td class="num">7 153 262</td>
-                </tr>
-                <tr>
-                    <td>Amazon</td>
-                    <td class="num">4 269 995</td>
-                </tr>
-                <tr>
-                    <td>Espírito Santo</td>
-                    <td class="num">4 108 508</td>
-                </tr>
-                <tr>
-                    <td>Paraíba</td>
-                    <td class="num">4 059 905</td>
-                </tr>
-                <tr>
-                    <td>Mato Grosso</td>
-                    <td class="num">3 567 234</td>
-                </tr>
-                <tr>
-                    <td>Rio Grande do Norte</td>
-                    <td class="num">3 560 903</td>
-                </tr>
-                <tr>
-                    <td>Alagoas</td>
-                    <td class="num">3 365 351</td>
-                </tr>
-                <tr>
-                    <td>Piauí</td>
-                    <td class="num">3 289 290</td>
-                </tr>
-                <tr>
-                    <td>Distrito Federa</td>
-                    <td class="num">3 094 325</td>
-                </tr>
-                <tr>
-                    <td>Mato Grosso do Sul</td>
-                    <td class="num">2 839 188</td>
-                </tr>
-                <tr>
-                    <td>Sergipe</td>
-                    <td class="num">2 338 474</td>
-                </tr>
-                <tr>
-                    <td>Rondôni</td>
-                    <td class="num">1 815 278</td>
-                </tr>
-                <tr>
-                    <td>Tocantin</td>
-                    <td class="num">1 607 363</td>
-                </tr>
-                <tr>
-                    <td>Acre</td>
-                    <td class="num">906 876</td>
-                </tr>
-                <tr>
-                    <td>Amapá</td>
-                    <td class="num">877 613</td>
-                </tr>
-                <tr>
-                    <td>Roraima</td>
-                    <td class="num">652 713</td>
-                </tr>
-               
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th scope="row">Total de habitantes</th>
-                    <td class="num"><strong>0000</strong></td>
-
-            </tfoot>       
-    </table>            
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>São paulo</td>
+                    <td class="num">45919049</td>
+                    </tr>
+                    <tr>
+                    <td>minas gerais</td>
+                    <td class="num">21168791</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">17 463 349</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="num">14 985 284</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="num">11 597 484</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td class="num">11 466 630</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco</td>
+                        <td class="num">9 674 793</td>
+                    </tr>
+                    <tr>
+                        <td>Ceará</td>
+                        <td class="num">9 240 580</td>
+                    </tr>
+                    <tr>
+                        <td>Pará</td>
+                        <td class="num">8 777 124</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Catarina</td>
+                        <td class="num">7 338 473</td>
+                    </tr>
+                    <tr>
+                        <td>Goiás</td>
+                        <td class="num">7 206 589</td>
+                    </tr>
+                    <tr>
+                        <td>Maranhã</td>
+                        <td class="num">7 153 262</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon</td>
+                        <td class="num">4 269 995</td>
+                    </tr>
+                    <tr>
+                        <td>Espírito Santo</td>
+                        <td class="num">4 108 508</td>
+                    </tr>
+                    <tr>
+                        <td>Paraíba</td>
+                        <td class="num">4 059 905</td>
+                    </tr>
+                    <tr>
+                        <td>Mato Grosso</td>
+                        <td class="num">3 567 234</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Norte</td>
+                        <td class="num">3 560 903</td>
+                    </tr>
+                    <tr>
+                        <td>Alagoas</td>
+                        <td class="num">3 365 351</td>
+                    </tr>
+                    <tr>
+                        <td>Piauí</td>
+                        <td class="num">3 289 290</td>
+                    </tr>
+                    <tr>
+                        <td>Distrito Federa</td>
+                        <td class="num">3 094 325</td>
+                    </tr>
+                    <tr>
+                        <td>Mato Grosso do Sul</td>
+                        <td class="num">2 839 188</td>
+                    </tr>
+                    <tr>
+                        <td>Sergipe</td>
+                        <td class="num">2 338 474</td>
+                    </tr>
+                    <tr>
+                        <td>Rondôni</td>
+                        <td class="num">1 815 278</td>
+                    </tr>
+                    <tr>
+                        <td>Tocantin</td>
+                        <td class="num">1 607 363</td>
+                    </tr>
+                    <tr>
+                        <td>Acre</td>
+                        <td class="num">906 876</td>
+                    </tr>
+                    <tr>
+                        <td>Amapá</td>
+                        <td class="num">877 613</td>
+                    </tr>
+                    <tr>
+                        <td>Roraima</td>
+                        <td class="num">652 713</td>
+                    </tr>
+        
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total de habitantes</th>
+                        <td class="num"><strong>0000</strong></td>
+                </tfoot>
+        </table>
+    </main>           
 </body>
 </html>

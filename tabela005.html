@@ -4,19 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="IMAGEM/tabela2.ico" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
    <title>exercicios de tabela</title>
    <style>
-   table{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   background-color: antiquewhite; width: 00px;
-   }
-   caption{
-      font-size: 1.3em;font-weight: bolder;padding: 8px;
-   }
-   th, td{
-      border: 1.5px solid blue;padding: 8px;
+   
       
-   }
+   
    col.nome, col.idade{
       background-color: aqua;
    }
@@ -27,97 +21,104 @@
    </style>
 </head>
 <body>
-   <h1>Destacando colunas</h1>
-   
-   <table>
-   <colgroup>
-   <col class="nome">
-   <col class="sexo" >
-   <col class="idade">
-   <col class="c4">
-   </colgroup>
-   <caption>Cadastro</caption>
-   <tr>
-   <th scope="col">nome</th>
-   <th scope="col">sexo</th>
-   <th scope="col">idade</th>
-   <th scope="col">profição</th>
-   </tr>
-   <tr>
-   <td>ana maria</td>
-   <td>f</td>
-   <td>25</td>
-   <td>jornalista</td>
-   </tr>
-   <tr>
-      <td>claudio</td>
-      <td>m</td>
-      <td>28</td>
-      <td>prof</td>
-   </tr>
-    <tr>
-      <td>gust</td>
-      <td>m</td>
-      <td>40</td>
-      <td>prof</td>
-   </tr>
-    <tr>
-      <td>sati</td>
-      <td>f</td>
-      <td>15</td>
-      <td>est</td>
-   </tr>
-    <tr>
-      <td>poli</td>
-      <td>m</td>
-      <td>22</td>
-      <td>+18</td>
-   </tr>
-    <tr>
-      <td>gabiru</td>
-      <td>m</td>
-      <td>25</td>
-      <td>guarda</td>
-   </tr>
-   
-   </table>
-   <p>Para destacar colunas usamos &lt;colgroup&gt;&lt/colgroup&gt; <br>
-   dentro de &ltcolgroup&gt; colocamos &lt;col class="variavel" <br>
-   tem que criar uma 'col' equivalente ao numero de colunas da tabela <br>
-   as tabelas são afetadas na sequencia da esquerda para a direita <br>
-   para destacar varias colunas em sequencia com a mesma caracteristica <br>
-   adicionamos um 'span="n" <br>
-    ex:. &lt;col class="variavel" span="numero de colunas" <br>
-    -----&lt;col class="colunas" span="3" <br>
-    serão afetadas 3 colunas ma sequencia <br>
-    e preciso declarar as caracteristicas da coluna a destacar em &lt;style&gt; usando a variavel declarada em 'col'<br>
-     para criar um efeito zebrado e so intercalar as variaveis com a mesma caracteristica<br>
-    </p>
-    <p>Exemplo de montagem</p>
-    <p>&lt;table&gt; <br>
-            &lt;colgroup&gt; <br>
-            --&lt;col class="c1"&gt; <br>
-            --&lt;col class="c2"&gt;<br>
-            --&lt;col class="c3"&gt;<br>
-            --&lt;col class="c4"&gt; <br>
-            --&lt;col class="colunas" span="2"&gt;<br>
-            --&lt;col class="c7"&gt;<br>
-            &lt;/colgroup&gt;<br>
-      &lt;table&gt;         
-      <p>Criando caracteristicas em &lt;style&gt;<br>
-      > col.c1, col.c3{backgroud-color:azul} determina a caracteristica para as colunas '1 e 3' <br>
-      criando um efeito zebrado <br>
-      > col.colunas{background-color: amarelo} determina que a coluna 5 e 6 recebam a cor amarela <br>
-      pois a 'col class = colunas' tem um span="2", quando usamos o 'span=""so precisamos <br>
-      declarar a primeira coluna do grupo a ser destacado,o 'span="n" ' ja reconhece as colunas seguintes <br>
-      como parte do grupo <br>
-     > col.c7{cor: verde} determina que a cor da fonte da coluna 7 sera verde <br>
-       </p> 
-       <p>Obs:. a variavel não pode começar com numero <br>
-       destaque so funciona para background-color</p>        
-               
-               
-               
-               </p>
+   <main>
+      <header>
+         <h1>Destacando colunas</h1>
+         <nav><p><a href="tabela004.html">pg 4</a> <a href="index.html">indice</a>
+          <a href="tabela006.html">pg 6</a></p></nav>
+      </header>
+      
+      <article>
+         <table>
+         <colgroup>
+         <col class="nome">
+         <col class="sexo" >
+         <col class="idade">
+         <col class="c4">
+         </colgroup>
+         <caption>Cadastro</caption>
+         <tr>
+         <th scope="col">nome</th>
+         <th scope="col">sexo</th>
+         <th scope="col">idade</th>
+         <th scope="col">profição</th>
+         </tr>
+         <tr>
+         <td>ana maria</td>
+         <td>f</td>
+         <td>25</td>
+         <td>jornalista</td>
+         </tr>
+         <tr>
+            <td>claudio</td>
+            <td>m</td>
+            <td>28</td>
+            <td>prof</td>
+         </tr>
+          <tr>
+            <td>gust</td>
+            <td>m</td>
+            <td>40</td>
+            <td>prof</td>
+         </tr>
+          <tr>
+            <td>sati</td>
+            <td>f</td>
+            <td>15</td>
+            <td>est</td>
+         </tr>
+          <tr>
+            <td>poli</td>
+            <td>m</td>
+            <td>22</td>
+            <td>+18</td>
+         </tr>
+          <tr>
+            <td>gabiru</td>
+            <td>m</td>
+            <td>25</td>
+            <td>guarda</td>
+         </tr>
+         
+         </table>
+         <p>Para destacar colunas usamos &lt;colgroup&gt;&lt/colgroup&gt; <br>
+         dentro de &ltcolgroup&gt; colocamos &lt;col class="variavel" <br>
+         tem que criar uma 'col' equivalente ao numero de colunas da tabela <br>
+         as tabelas são afetadas na sequencia da esquerda para a direita <br>
+         para destacar varias colunas em sequencia com a mesma caracteristica <br>
+         adicionamos um 'span="n" <br>
+          ex:. &lt;col class="variavel" span="numero de colunas" <br>
+          -----&lt;col class="colunas" span="3" <br>
+          serão afetadas 3 colunas ma sequencia <br>
+          e preciso declarar as caracteristicas da coluna a destacar em &lt;style&gt; usando a variavel declarada em 'col'<br>
+           para criar um efeito zebrado e so intercalar as variaveis com a mesma caracteristica<br>
+          </p>
+          <p>Exemplo de montagem</p>
+          <p>&lt;table&gt; <br>
+                  &lt;colgroup&gt; <br>
+                  --&lt;col class="c1"&gt; <br>
+                  --&lt;col class="c2"&gt;<br>
+                  --&lt;col class="c3"&gt;<br>
+                  --&lt;col class="c4"&gt; <br>
+                  --&lt;col class="colunas" span="2"&gt;<br>
+                  --&lt;col class="c7"&gt;<br>
+                  &lt;/colgroup&gt;<br>
+            &lt;table&gt;
+            <p>Criando caracteristicas em &lt;style&gt;<br>
+            > col.c1, col.c3{backgroud-color:azul} determina a caracteristica para as colunas '1 e 3' <br>
+            criando um efeito zebrado <br>
+            > col.colunas{background-color: amarelo} determina que a coluna 5 e 6 recebam a cor amarela <br>
+            pois a 'col class = colunas' tem um span="2", quando usamos o 'span=""so precisamos <br>
+            declarar a primeira coluna do grupo a ser destacado,o 'span="n" ' ja reconhece as colunas seguintes <br>
+            como parte do grupo <br>
+           > col.c7{cor: verde} determina que a cor da fonte da coluna 7 sera verde <br>
+             </p>
+             <p>Obs:. a variavel não pode começar com numero <br>
+             destaque so funciona para background-color</p>
+      </article>
+   </main>      
 </body>
-</html>
+</html>               
+               
+               
+            
