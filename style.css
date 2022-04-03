@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root{
+--fonte1:'Shadows Into Light', cursive;
+   --fonte2:'Great Vibes', cursive;
+   --fonte3:verdana, geneva, tahoma, sans-serif;
+    --Khaki:#F0E68C, bege;
+    --Yellow:#FFFF00, amarelo;
+    --Gold:#FFD700,ouro;
+    --LimeGreen:#32CD32, verde medio;
+    --LightGreen:#90EE90;
+    --MidnightBlue:#191970;
+    --DimGray:#696969;
+    --Black:#000000;
+
+}
+body{
+   background-image:radial-gradient(#F0E68C, #FFFF00, #90EE90);
+}
+main{
+   background-color: #F0E68C;
+   padding-left: 5px; margin: 5px;
+  
+}
