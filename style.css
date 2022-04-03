@@ -9,6 +9,8 @@
 --fonte1:'Shadows Into Light', cursive;
    --fonte2:'Great Vibes', cursive;
    --fonte3:verdana, geneva, tahoma, sans-serif;
+   --fonte4:'Use.otf';
+   --fonte5:'Hurricane-Regular.ttf';
     --Khaki:#F0E68C, bege;
     --Yellow:#FFFF00, amarelo;
     --Gold:#FFD700,ouro;
@@ -29,7 +31,7 @@ main{
   
 }
 header > h1{
-   font-family: var(--fonte3);background-color: #32CD32;padding: 10px;
+   font-family:var(--fonte3) ;background-color: #32CD32;padding: 10px;
    margin-bottom: 0px;border-radius: 10px 10px 0px 0px;margin-left: -4px; 
    font-variant: small-caps;
 }
@@ -37,9 +39,15 @@ header > h2{
    background-color: #90EE90;margin-top: 0px; border-radius: 0px 0px 10px 10px;
    margin-left: -4px;padding: 10px; margin-bottom: 0px;text-align: center;
 }
+article > h2{
+text-align: center;
+}
+h2{
+   text-align: center;font-weight: bolder;font-size: 2em;
+}
 nav{
    background-color: #FFD700;padding: 10px;margin-top: 1px;
-   margin-left: -4px;border-radius: 10px;width: auto;margin-bottom: 4%;
+   margin-left: -4px;border-radius:0px 0px 10px 10px;width: auto;margin-bottom: 4%;
    height: auto;font-variant: small-caps;
 }
 h3{
@@ -65,9 +73,22 @@ p{
 img{
    width: 65%;margin-left: 15%;
 }
-picture{
-  
-}
+
 div.index1{
  margin-bottom: -3%;
 }
+ body{
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      table{
+         border-collapse: collapse;
+      }
+      caption{
+         font-size: 1.3em;
+         font-weight: bolder;
+         padding: 10px;
+      }
+      th, td{
+         border: 1px solid rgb(22, 14, 139);
+         padding: 10px;
+      }

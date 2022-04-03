@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMAGEM/tabela2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>mescla celulas</title>
     <style>
         body{
@@ -19,58 +21,67 @@
     </style>
 </head>
 <body>
-    <h1>Mesclagem de celulas</h1>
-    <table>
-        <tr>
-            <td>A</td>
-            <td colspan="2">B</td>
-            <td>C</td>
-        </tr>
-        <tr>
-            <td rowspan="2">D</td>
-            <td>E</td>
-            <td>F</td>
-        </tr>
-        <tr>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
-        </tr>
-        <tr>
-            <td>J</td>
-            <td>L</td>
-            <td>M</td>
-        </tr>
-    </table>
-    
-    <h2>Mesclagem horizontal e vertical</h2>
-    <p>no codigo da celuna que queremos mesclar colocamos' <br>
-    'culspan=""' para horizontal <br>
-    'rowspan="" para vertical <br>
-    ex:.'&lt;td colspan="2"&gt; a mesclagem abrange 2 colunas como no campo B acima <br>
-    '&lt;rowspan="2"&gt;' a mesclagem atinge 2 linhas como no campo D acima</p>
-    <p>Para eliminar os apendices e preciso eliminar do codigo a celula seguinte da que se quer mesclar, no caso da celula B elimina-se a C, no caso da D elimina-se a que estaria logo abaixo a G.</p>
-    Isso ilimina os apendices C e I
-    <table>
-    <tr>
-        <td>A</td>
-        <td colspan="2">B</td>
-        
-    </tr>
-    <tr>
-        <td rowspan="2">D</td>
-        <td>E</td>
-        <td>F</td>
-    </tr>
-    <tr>
-       
-        <td>H</td>
-        <td>I</td>
-    </tr>
-    <tr>
-        <td>J</td>
-        <td>L</td>
-        <td>M</td>
-    </table>
+    <main>
+        <header>
+            <h1>Mesclagem de celulas</h1>
+            <nav><p><a href="tabela002.html">pg 2</a> <a href="index.html">indice</a>
+             <a href="tabela004.html">pg 4</a></p></nav>
+        </header>
+        <article>
+            <h2>Mesclagem horizontal e vertical</h2>
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td colspan="2">B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+            </table>
+            
+            
+            <p>no codigo da celuna que queremos mesclar colocamos' <br>
+            'culspan=""' para horizontal <br>
+            'rowspan="" para vertical <br>
+            ex:.'&lt;td colspan="2"&gt; a mesclagem abrange 2 colunas como no campo B acima <br>
+            '&lt;rowspan="2"&gt;' a mesclagem atinge 2 linhas como no campo D acima</p>
+            <p>Para eliminar os apendices e preciso eliminar do codigo a celula seguinte da que se quer mesclar, no caso da celula B elimina-se a C, no caso da D elimina-se a que estaria logo abaixo a G.</p>
+            Isso ilimina os apendices C e I
+            <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+            
+            </tr>
+            <tr>
+                <td rowspan="2">D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+            
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>L</td>
+                <td>M</td>
+            </table>
+        </article>
+    </main>
 </body>
 </html>
